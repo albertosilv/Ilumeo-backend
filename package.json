@@ -1,0 +1,17 @@
+{
+  "name": "ilumeo-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/albertosilv/Ilumeo-backend.git",
+  "author": "Alberto Silva <alberto.silva5456@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "ts-node-dev --ignore-watch node_modules src/index.ts"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.2"
+  }
+}

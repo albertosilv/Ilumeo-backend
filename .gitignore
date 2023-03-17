@@ -1,0 +1,5 @@
+dist
+.env
+
+# Dependency
+node_modules/
