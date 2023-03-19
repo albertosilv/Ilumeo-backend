@@ -5,11 +5,11 @@ import { FindAccountUseCase } from './find-account-use-case';
 
 class FindAccountController {
   async handle(request: Request, response: Response): Promise<void> {
-    const userId = request.user.id;
+    const code = request.user.code;
 
     const findAccountUseCase = container.resolve(FindAccountUseCase);
 
-    const account = await findAccountUseCase.execute(userId);
+    const account = await findAccountUseCase.execute(code);
 
     response.status(201).json(account);
   }
