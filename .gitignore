@@ -3,3 +3,4 @@ dist
 
 # Dependency
 node_modules/
+./dev.db
