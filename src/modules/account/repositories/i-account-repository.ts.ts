@@ -18,8 +18,6 @@ interface UserProps extends User {
 
 interface IAccountRepository {
     create(data: ICreateAccountDTO): Promise<UserProps>;
-    findUserByEmail(email: string): Promise<UserProps | undefined>;
-    findUserByUserId(userId: string): Promise<UserProps | undefined>;
 }
 
 export { IAccountRepository, UserProps };
