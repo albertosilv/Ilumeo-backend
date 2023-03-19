@@ -6,7 +6,6 @@ import { CreateAccountUseCase } from './create-account-use-case';
 class CreateAccountController {
   async handle(request: Request, response: Response): Promise<void> {
     const data = request.body;
-    console.log(data)
 
     const createAccountUseCase = container.resolve(CreateAccountUseCase);
 

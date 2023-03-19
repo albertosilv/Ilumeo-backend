@@ -1,6 +1,7 @@
 import cors from 'cors';
 import express from 'express';
 import 'reflect-metadata';
+import '~shared/container';
 
 import { routers } from './routes';
 

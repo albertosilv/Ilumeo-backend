@@ -1,7 +1,7 @@
 import {  inject, injectable } from 'tsyringe';
 
 import { ICreateAccountDTO } from '~modules/account/dtos/i-create-account-dto';
-import { IAccountRepository } from '~modules/account/repositories/i-account-repository.ts';
+import { IAccountRepository } from '~modules/account/repositories/i-account-repository';
 
 
 @injectable()

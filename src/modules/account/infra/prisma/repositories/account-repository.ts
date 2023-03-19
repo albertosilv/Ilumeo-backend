@@ -2,7 +2,7 @@ import { ICreateAccountDTO } from '~modules/account/dtos/i-create-account-dto';
 import {
   IAccountRepository,
   UserProps,
-} from '~modules/account/repositories/i-account-repository.ts';
+} from '~modules/account/repositories/i-account-repository';
 import { prismaClient } from '~shared/infra/http/database/prisma-cliente';
 
 class AccountRepository implements IAccountRepository {
