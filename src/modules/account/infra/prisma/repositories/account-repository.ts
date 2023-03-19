@@ -1,6 +1,3 @@
-import { User} from '@prisma/client';
-
-import { IAccountDTO } from '~modules/account/dtos/i-account-dto';
 import { ICreateAccountDTO } from '~modules/account/dtos/i-create-account-dto';
 import {
   IAccountRepository,

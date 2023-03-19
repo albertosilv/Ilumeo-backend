@@ -2,7 +2,7 @@ import {
     Account,
 } from '@prisma/client';
 
-import { ICreateAccountDTO } from '../dtos/i-create-account-dto';
+import { ICreateAccountDTO } from '~modules/account/dtos/i-create-account-dto';
 
 interface User {
     id: string;

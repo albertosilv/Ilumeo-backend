@@ -1,4 +1,4 @@
-import { container, inject, injectable } from 'tsyringe';
+import {  inject, injectable } from 'tsyringe';
 
 import { ICreateAccountDTO } from '~modules/account/dtos/i-create-account-dto';
 import { IAccountRepository } from '~modules/account/repositories/i-account-repository.ts';
