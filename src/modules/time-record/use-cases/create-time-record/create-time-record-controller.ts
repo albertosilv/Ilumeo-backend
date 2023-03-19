@@ -3,7 +3,7 @@ import { container } from 'tsyringe';
 
 import { CreateTimeRecordUseCase } from './create-time-record-use-case';
 
-class CreateAccountController {
+class CreateTimeRecordController {
   async handle(request: Request, response: Response): Promise<void> {
     const data = request.body;
 
@@ -15,4 +15,4 @@ class CreateAccountController {
   }
 }
 
-export { CreateAccountController };
+export { CreateTimeRecordController };
