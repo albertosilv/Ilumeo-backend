@@ -18,6 +18,7 @@ interface UserProps extends User {
 
 interface IAccountRepository {
     create(data: ICreateAccountDTO): Promise<UserProps>;
+    findUserByUserCode(id:String):Promise<UserProps>;
 }
 
 export { IAccountRepository, UserProps };

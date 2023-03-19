@@ -39,6 +39,27 @@ class AccountRepository implements IAccountRepository {
 
     return newUser;
   }
+
+  async findUserByUserCode(code:string):Promise<UserProps>{
+    const user = await this.connection.findFirst({
+      where: {
+        account: {
+          code,
+        },
+      },
+      select: {
+        id: true,
+        name:true,
+        document:true,
+        createdAt: true,
+        updatedAt: true,
+        account: true,
+      },
+    });
+
+    return user;
+  }
+
 }
 
 export { AccountRepository };
