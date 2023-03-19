@@ -8,6 +8,7 @@ const appError = (
   response: Response,
   _: NextFunction,
 ) => {
+    console.log(err)
   if (err instanceof AppError) {
     return response.status(err.statusCode).json({
       message: err.message,

@@ -1,6 +1,6 @@
 import {  inject, injectable } from 'tsyringe';
+import { AppError } from '~shared/errors/AppError';
 
-import { ICreateAccountDTO } from '~modules/account/dtos/i-create-account-dto';
 import { IAccountRepository } from '~modules/account/repositories/i-account-repository';
 
 
@@ -15,8 +15,8 @@ class FindAccountUseCase {
         const accountExists = await this.accountRepository.findUserByUserCode(userCode);
     
         if (!accountExists) {
-          throw new Error('User not found');
-        }
+            throw new AppError('User not found');
+          }
     
         return accountExists;
       }

@@ -1,6 +1,4 @@
 dist
 .env
-
-# Dependency
 node_modules/
-./dev.db
+./prisma/dev.db

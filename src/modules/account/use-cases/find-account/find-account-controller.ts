@@ -5,7 +5,7 @@ import { FindAccountUseCase } from './find-account-use-case';
 
 class FindAccountController {
   async handle(request: Request, response: Response): Promise<void> {
-    const code = request.user.code;
+    const code = request.params.code;
 
     const findAccountUseCase = container.resolve(FindAccountUseCase);
 
