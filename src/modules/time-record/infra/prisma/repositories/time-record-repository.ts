@@ -1,11 +1,11 @@
 import { ICreateTimeRecordDTO } from '~modules/time-record/dtos/i-create-time-record-dto';
 import {
-  ITimeRecordPropsRepository,
+  ITimeRecordRepository,
   TimeRecordProps,
 } from '~modules/time-record/repositories/i-time-record-repository';
 import { prismaClient } from '~shared/infra/http/database/prisma-cliente';
 
-class TimeRecordRepository implements ITimeRecordPropsRepository {
+class TimeRecordRepository implements ITimeRecordRepository {
   private connection: typeof prismaClient.timeRecord;
 
   constructor() {

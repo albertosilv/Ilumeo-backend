@@ -7,9 +7,9 @@ import { ICreateTimeRecordDTO } from '~modules/time-record/dtos/i-create-time-re
 interface TimeRecordProps extends TimeRecord {
 }
 
-interface ITimeRecordPropsRepository {
+interface ITimeRecordRepository {
     create(data: ICreateTimeRecordDTO): Promise<TimeRecordProps>;
     getAllByUserId(id: String): Promise<TimeRecordProps[]>;
 }
 
-export { ITimeRecordPropsRepository, TimeRecordProps };
+export { ITimeRecordRepository, TimeRecordProps };

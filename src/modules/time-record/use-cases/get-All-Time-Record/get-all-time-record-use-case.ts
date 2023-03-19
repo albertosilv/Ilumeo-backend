@@ -1,13 +1,13 @@
 import { inject, injectable } from 'tsyringe';
 
-import { ITimeRecordPropsRepository } from '~modules/time-record/repositories/i-time-record-repository';
+import { ITimeRecordRepository } from '~modules/time-record/repositories/i-time-record-repository';
 
 
 @injectable()
 class GetAllTimeRecordUseCase {
   constructor(
     @inject('TimeRecordRepository')
-    private timeRecordRepository: ITimeRecordPropsRepository,
+    private timeRecordRepository: ITimeRecordRepository,
   ) { }
 
   async execute(id: string) {

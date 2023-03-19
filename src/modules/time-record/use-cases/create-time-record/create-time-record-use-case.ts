@@ -1,6 +1,6 @@
 import {  inject, injectable } from 'tsyringe';
 
-import { ITimeRecordPropsRepository } from '~modules/time-record/repositories/i-time-record-repository';
+import { ITimeRecordRepository } from '~modules/time-record/repositories/i-time-record-repository';
 import { ICreateTimeRecordDTO } from '../../dtos/i-create-time-record-dto';
 
 
@@ -8,7 +8,7 @@ import { ICreateTimeRecordDTO } from '../../dtos/i-create-time-record-dto';
 class CreateTimeRecordUseCase {
     constructor(
         @inject('TimeRecordRepository')
-        private timeRecordRepository: ITimeRecordPropsRepository,
+        private timeRecordRepository: ITimeRecordRepository,
       ) { }
 
     async execute(data: ICreateTimeRecordDTO) {
