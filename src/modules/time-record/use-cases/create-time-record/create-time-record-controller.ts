@@ -6,6 +6,7 @@ import { CreateTimeRecordUseCase } from './create-time-record-use-case';
 class CreateTimeRecordController {
   async handle(request: Request, response: Response): Promise<void> {
     const data = request.body;
+    console.log(data)
 
     const createTimeRecordUseCase = container.resolve(CreateTimeRecordUseCase);
 
